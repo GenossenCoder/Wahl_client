@@ -8,8 +8,7 @@ const Poll = (props) =>{
   let voters =[]
   let vote = {}
   let i=0
-  console.log(props.competitors)
-  {props.graph.map(obj=>{
+  props.graph.map(obj=>{
     voters.push(obj.voters.length);
     vote["name"]=props.competitors[i]
     vote["votes"]=obj.voters.length;
@@ -18,7 +17,8 @@ const Poll = (props) =>{
     i=i+1
     
     vote={}
-  })}
+    return "hi"
+  })
   return (
     <div className="poll-container">
         <h1 className="poll-title">{props.title}</h1>
