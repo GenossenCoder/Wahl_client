@@ -1,0 +1,32 @@
+.poll-container{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(246, 246, 246);
+    border: 1px solid rgb(223, 223, 223);
+    border-radius:5px;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+.poll-title{
+    margin: 0;
+    text-decoration: underline;
+    font-size:24px;
+}
+.poll-text{
+    padding: 10px;
+    max-width: 60%;
+    overflow-wrap: break-word;
+    overflow-y: hidden;
+    margin: 0 auto;
+}
+.poll-deadline{
+    padding: 5px;
+}
+.poll-chart{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
