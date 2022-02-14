@@ -8,10 +8,12 @@ const Poll = (props) =>{
   let voters =[]
   let vote = {}
   let i=0
+  const colors = ['#005f73','#0a9396','#94d2bd','#e9d8a6','#ee9b00','#ca6702']
   props.graph.map(obj=>{
     voters.push(obj.voters.length);
-    vote["name"]=props.competitors[i]
+    vote["name"]=props.competitors[i];
     vote["votes"]=obj.voters.length;
+    vote["fill"]=colors[i];
     pieChartData.push(vote)
     console.log(obj.voters)
     i=i+1
