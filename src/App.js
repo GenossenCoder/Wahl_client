@@ -1,7 +1,6 @@
 import './App.css';
 import Poll from './components/Poll'
 import {useQuery,gql} from "@apollo/client"
-import {motion} from 'framer-motion'
 
 
 
