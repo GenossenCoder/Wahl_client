@@ -1,6 +1,11 @@
 import './App.css';
 import Poll from './components/Poll'
 import {useQuery,gql} from "@apollo/client"
+import {motion} from 'framer-motion'
+
+
+
+
 const GET_POLLS = gql`
 query{
   events {
@@ -23,7 +28,7 @@ function App() {
     return (
       <div className="App">
       <h1>Abstimmungen in der KVV</h1>
-      <h1>loading</h1>
+      <h1>loading...</h1>
     </div>
     )
   }
